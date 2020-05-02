@@ -1,0 +1,13 @@
+https://www.domoticz.com/wiki/PersistentUSBDevices
+
+--> /etc/udev/rules.d/99-usb-serial.rules
+--> SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ATTRS{devpath}=="1.2", SYMLINK+="ttyNAN0"
+
+devadm control --reload-rules && udevadm trigger
+
+https://www.silabs.com/community/interface/knowledge-base.entry.html/2016/06/06/fixed_tty_deviceass-XzTf
+http://hintshop.ludvig.co.nz/show/persistent-names-usb-serial-devices/
+
+udevadm monitor --> https://wiki.gentoo.org/wiki/Udev/de
+
+ACHTUNG - dmesg zeigt immer noch /dev/ttyUSB0 an, verfügbar aber über /dev/ttyNAN0
