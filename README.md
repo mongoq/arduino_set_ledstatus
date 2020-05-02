@@ -1,4 +1,4 @@
-# arduino_set_ledstatus
+# Arduino Nano set LED status
 Setting LED states with an Arduino Nano 
 
 Build the Arduino Nano with information from: http://www.harctoolbox.org/arduino_nano.html
